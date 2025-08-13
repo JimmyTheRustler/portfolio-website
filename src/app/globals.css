@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+.dark {
+  --background: #111827;
+  --foreground: #f9fafb;
+}
+
+/* Override OS theme preferences - ensure manual selection takes priority */
+html[class*="dark"] {
+  color-scheme: dark;
+}
+
+html:not([class*="dark"]) {
+  color-scheme: light;
+}
+
+/* Force light mode when no dark class is present */
+html:not([class*="dark"]) body {
+  background: #ffffff !important;
+  color: #171717 !important;
+}
+
+/* Force dark mode when dark class is present */
+html[class*="dark"] body {
+  background: #111827 !important;
+  color: #f9fafb !important;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom focus styles */
+*:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Hover effects for interactive elements */
+a:hover {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
