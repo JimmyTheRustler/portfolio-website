@@ -11,7 +11,7 @@ export default function Home() {
         <nav className="max-w-4xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-xl font-semibold text-gray-900 dark:text-white">
-              James O'Brien
+              James O&apos;Brien
             </div>
             <div className="flex items-center space-x-8">
               <Link href="#about" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
@@ -34,7 +34,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="mb-16">
           <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            James O'Brien
+            James O&apos;Brien
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-6">
             jamesseanobrien@gmail.com
@@ -160,7 +160,7 @@ export default function Home() {
               <h4 className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-3">Personal Project</h4>
               <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
                 Developed a Discord bot using Node.js and MySQL to identify shared games among friends for multiplayer sessions. 
-                Integrated Steam's API to access and compile data on friends' game libraries, creating a list of common games.
+                Integrated Steam&apos;s API to access and compile data on friends game libraries, creating a list of common games.
               </p>
               
               <div className="space-y-3">
@@ -238,7 +238,7 @@ export default function Home() {
             <p>
               I like to solve problems. The bigger the problem is, the pleasure by solving it grows bigger. 
               I hope I have a bunch of tasks waiting for me every day, mark them done and say 
-              "It's been a very busy but productive day"
+              &ldquo;It&apos;s been a very busy but productive day&rdquo;
             </p>
             <p>
               Passionate about gaming and technology, I enjoy developing tools that enhance user experiences 
@@ -273,7 +273,7 @@ export default function Home() {
       <footer className="border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-4xl mx-auto px-6 py-8">
           <p className="text-center text-gray-600 dark:text-gray-400">
-            © 2025 James O'Brien. Built with Next.js and Tailwind CSS.
+            © 2025 James O&apos;Brien. Built with Next.js and Tailwind CSS.
           </p>
         </div>
       </footer>

@@ -28,7 +28,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       else {
         setTheme('light');
       }
-    } catch (error) {
+    } catch {
       console.log('Could not access localStorage, defaulting to light mode');
       setTheme('light');
     }
@@ -57,7 +57,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       }
       
       localStorage.setItem('theme', theme);
-    } catch (error) {
+    } catch {
       console.log('Could not update theme in localStorage');
     }
   }, [theme]);
